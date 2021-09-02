@@ -1,0 +1,51 @@
+/* Esta seccion se customiza Error 404 de la web*/
+
+.gridIndex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.1em;
+}
+
+.hijo1Error40{
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+.hijo2Error40{
+    grid-row: 2/3;
+    grid-column: 1/2;
+
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    img{
+        width: 60%;
+        height: auto;
+        display:block;
+        margin:auto;
+        }
+        button{
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+}
+
+.hijo2Error40{
+    grid-row: 3/4;
+    grid-column: 1/2;
+}
+
+@media (max-width: 1188px){
+    .hijo2Error40{
+        img{
+            width: 100%;
+            margin-top: 90px;
+            margin-bottom: 90px;
+        }
+    }
+}
+
+

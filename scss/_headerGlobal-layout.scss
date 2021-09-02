@@ -1,0 +1,87 @@
+/*En esta seccion se estiliza un header global para todas las secciones de html existentes*/
+.hijo1Index,.hijo1Productos,.hijo1Promociones,.hijo1About,.hijo1Login,.hijo1Error40{
+  background-color: #B06910;
+  color: white;
+  font-family: 'Vidaloka', serif;
+  font-size: 1.1rem;
+
+  .logoWeb{
+    width: 80px;
+    height: 80px;
+  }
+  .logoLogin{
+    width: 50px;
+    height: 50px;
+  }
+  .contenedorGlobal,.navegacion{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.1rem 0;
+    width: 85%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.navegacion ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+.navegacion ul li{
+    display: inline-block;
+}
+
+.navegacion ul li a{
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navegacion ul li:hover{
+    background-color: black;
+    transition: all 0.5s linear;
+    border-radius: 15px;
+    opacity: .5;
+}
+
+.active1{
+    background-color: black;
+    border-radius: 15px;
+    opacity: .7;
+}
+
+.oculto{
+    visibility: hidden;
+}
+
+}
+
+@media (max-width: 996px){
+  .hijo1Index,.hijo1Productos,.hijo1Promociones,.hijo1About,.hijo1Login,.hijo1Error40{
+  
+      .contenedorGlobal,.navegacion{
+        height: 10vw;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 0.7rem;
+    }
+    .logoWeb,.logoLogin{
+        display: none
+    }
+    .oculto{
+        visibility: visible;
+    }
+    .navegacion ul li{
+        display: inline-block;
+    
+    }
+  }
+
+}
+
+
+
